@@ -84,7 +84,7 @@ const NewOrder = () => {
 
 	return (
 		<>
-			<Box sx={{p: '5%'}} display='flex' justifyContent='center' gap='5%'>
+			<Box sx={{p: '5%', flexDirection: {xs: 'column', md: 'row'}}} display='flex' justifyContent='center' gap='5%'>
 				<Box>
 					{orderRef.current.product && (
 						<ProductCard
