@@ -77,21 +77,21 @@ const NewOrder = () => {
 
 	if (loading)
 		return (
-			<Typography component='h1' variant='h1'>
+			<Typography component='h3' variant='h3'>
 				Loading...
 			</Typography>
 		);
 
 	return (
 		<>
-			<Box sx={{p: '5%', flexDirection: {xs: 'column', md: 'row'}}} display='flex' justifyContent='center' gap='5%'>
-				<Box>
+			<Box sx={{p: '5%', flexDirection: {xs: 'column', md: 'row'}}} display='flex' alignItems='center' justifyContent='center' gap='10%'>
+				<Box sx={{mb: {xs: '10%', md: 0}}}>
 					{orderRef.current.product && (
 						<ProductCard
 							product={orderRef.current.product}
 							hideBuyButton
 							showAllDetails
-							sx={{maxWidth: '240px'}}
+							sx={{width: {xs: '240px', sm: '320px'}}}
 						/>
 					)}
 				</Box>

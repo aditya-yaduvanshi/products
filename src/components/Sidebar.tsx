@@ -62,12 +62,11 @@ const Sidebar: React.FC<SiderbarProps> = ({
 				anchor='left'
 				ModalProps={{keepMounted: true}}
 			>
-				<Toolbar>
-					<Typography component='h6' variant='h6'>
-						Filter
-					</Typography>
-				</Toolbar>
+				<Toolbar/>
 				<Divider />
+				<Typography component='h6' variant='h6' sx={{textAlign: 'center', mt: '20px'}}>
+					Filter
+				</Typography>
 				<List>
 					<ListItem sx={{display: 'flex', flexDirection: 'column'}}>
 						<ListItemText>Price in Rs.</ListItemText>

@@ -54,10 +54,10 @@ const Products: React.FC<ProductsProps> = ({query, open, onClose}) => {
 						<Grid item xs={6} lg={4} key={product.id}>
 							<ProductCard product={product} />
 						</Grid>
-					)) : !loading && <Typography component='h1' variant='h1'>No Products Found!</Typography>}
+					)) : !loading && <Typography component='h3' variant='h3'>No Products Found!</Typography>}
 				</Grid>
 				{loading && (
-					<Typography component='h1' variant='h1'>
+					<Typography component='h3' variant='h3'>
 						Loading...
 					</Typography>
 				)}
